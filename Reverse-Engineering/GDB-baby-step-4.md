@@ -17,11 +17,11 @@ We are given a file called debugger0_d.<br/>
 Let's make the file executable and run `gdb`.
 
 ```zsh
-┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/3]
-└─$ chmod +x debugger0_c 
+┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/4]
+└─$ chmod +x debugger0_d
                                                                                               
-┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/3]
-└─$ gdb debugger0_c 
+┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/4]
+└─$ gdb debugger0_d 
 GNU gdb (Debian 13.2-1+b2) 13.2
 Copyright (C) 2023 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -37,8 +37,8 @@ Find the GDB manual and other documentation resources online at:
 
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
-Reading symbols from debugger0_c...
-(No debugging symbols found in debugger0_c)
+Reading symbols from debugger0_d...
+(No debugging symbols found in debugger0_d)
 (gdb)
 ```
 
