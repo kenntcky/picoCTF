@@ -12,11 +12,11 @@ Challenge link: https://play.picoctf.org/practice/challenge/398
 
 # Solution
 
-We are given a file called debugger0_d.<br/>
+We are given a file called debugger0_d.
 
 Let's make the file executable and run `gdb`.
 
-```zsh
+```
 ┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/4]
 └─$ chmod +x debugger0_d
                                                                                               
@@ -69,13 +69,13 @@ End of assembler dump.
 
 We can see here the `main` function calls a function called `func1`.
 
-```zsh
+```
    0x0000000000401142 <+38>:    call   0x401106 <func1>
 ```
 
 Let's now disassemble the `func1` function.
 
-```zsh
+```
 (gdb) disas func1
 Dump of assembler code for function func1:
    0x0000000000401106 <+0>:     endbr64
@@ -89,6 +89,10 @@ Dump of assembler code for function func1:
 ```
 
 We see there the `imul` instruction or the multiply instruction were used.
+
+```
+   0x0000000000401114 <+14>:    imul   $0x3269,%eax,%eax
+```
 
 It multiplies the `eax` register by the constant of `0x3269`.
 
