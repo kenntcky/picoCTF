@@ -55,7 +55,7 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-We can see that the `mov` instructions were used to move the hexadecimal value `0x86342` into the `EAX` register.
+We can see that the `mov` instructions were used to move the hexadecimal value `0x86342` into the `EAX` register.<br/>
 With that, we can assume that the EAX register contains the hexadecimal value `0x86342`.
 
 Then we just need to convert those hexadecimal to a decimal, and put it in the picoCTF{} flag format.
