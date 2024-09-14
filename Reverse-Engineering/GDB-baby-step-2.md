@@ -18,7 +18,7 @@ Just like GDB baby step 1, the title is telling us to use GDB to solve this chal
 
 Let's make the file executable, and then start `gdb`.
 
-```zsh
+```
 ┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/2]
 └─$ chmod +x debugger0_b
                                                                                               
@@ -48,7 +48,7 @@ We need to find out what is in the `eax` register at the end of the `main` funct
 
 Let's disassemble the `main` function first.
 
-```zsh
+```
 (gdb) disas main
 Dump of assembler code for function main:
    0x0000000000401106 <+0>:     endbr64
@@ -76,14 +76,14 @@ We can see the `eax` register at then end of the `main` function.<br/>
 
 Alright, let's put a breakpoint at the end of the `main` function.
 
-```zsh
+```
 (gdb) break *main+60
 Breakpoint 1 at 0x401142
 ```
 
 Next, we will run the program and inspect the value of the `eax` register.
 
-```zsh
+```
 (gdb) r
 Starting program: /home/kali/learn-ctf/Reverse-Engineering/picoCTF/GDB-baby-step/2/debugger0_b 
 [Thread debugging using libthread_db enabled]
