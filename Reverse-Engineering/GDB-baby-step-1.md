@@ -1,4 +1,4 @@
-# GDB Baby Step 1
+<h1 align="center">GDB Baby Step 1</h1>
 
 Contents:
 - [Challenge Information](#challenge-information)
