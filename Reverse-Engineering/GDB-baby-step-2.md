@@ -92,7 +92,6 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 Breakpoint 1, 0x0000000000401142 in main ()
 (gdb) info registers eax
 eax            0x4af4b             307019
-(gdb)
 ```
 
 Voila, we got the value of the `eax` register both in hexadecimal and decimal value.<br/>
