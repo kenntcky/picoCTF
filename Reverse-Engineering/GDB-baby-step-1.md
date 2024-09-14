@@ -14,7 +14,7 @@ Challenge link: https://play.picoctf.org/practice/challenge/395
 
 Firstly, we are given a file called debugger0_a.<br/>
 From the title of the challenge, we should already know that we are gonna use GDB to solve this challenge.<br/>
-Before we do anything, we will make the file executable first, and then start `gdb` to debug the file as instructed.
+Before we do anything, we will make the file executable first, and then start `gdb`.
 ```zsh
 ┌──(kali㉿kali)-[~/learn-ctf/Reverse-Engineering/GDB-baby-step/1]
 └─$ chmod +x debugger0_a                            
