@@ -1,7 +1,9 @@
 # GDB Baby Step 1
 
 Contents:
-<a href="#Challenge
+- [Challenge Information](#challenge-information)
+- [Solution](#solution)
+- [References](#references)
 
 # Challenge Information
 
