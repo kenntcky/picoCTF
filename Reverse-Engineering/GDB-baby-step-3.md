@@ -12,11 +12,11 @@ Challenge link: https://play.picoctf.org/practice/challenge/397
 
 # Solution
 
-We are given a file called debugger0_c.<br/>
+We are given a file called debugger0_c.
 
-Let's make the file executable, and run `gdb` first.<br/>
+Let's make the file executable, and run `gdb` first.
 
-```zsh
+```
 ┌──(kali㉿kali)-[~/…/Reverse-Engineering/picoCTF/GDB-baby-step/3]
 └─$ chmod +x debugger0_c 
                                                                                               
@@ -44,7 +44,7 @@ Reading symbols from debugger0_c...
 
 Next, we will disassemble the main function to determine where `0x2262c96b` is loaded in the memory.
 
-```zsh
+```
 (gdb) disas main
 Dump of assembler code for function main:
    0x0000000000401106 <+0>:     endbr64
@@ -59,11 +59,15 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-Alright, now we see that `0x2262c96b` is loaded in `-0x4(%rbp)`.<br/>
+Alright, now we see that `0x2262c96b` is loaded in `-0x4(%rbp)`.
+
+```
+   0x0000000000401115 <+15>:    movl   $0x2262c96b,-0x4(%rbp)
+```
 
 Let's put a breakpoint right after the value has been moved into memory, and print out the four bytes that is stored in the memory.
 
-```zsh
+```
 (gdb) break *main+22
 Breakpoint 1 at 0x40111c
 (gdb) r
