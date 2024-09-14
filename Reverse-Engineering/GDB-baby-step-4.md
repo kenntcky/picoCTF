@@ -67,7 +67,11 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-We can see the `main` function calls a function called `func1`.
+We can see here the `main` function calls a function called `func1`.
+
+```zsh
+   0x0000000000401142 <+38>:    call   0x401106 <func1>
+```
 
 Let's now disassemble the `func1` function.
 
