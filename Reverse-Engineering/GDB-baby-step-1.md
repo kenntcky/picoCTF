@@ -56,7 +56,7 @@ End of assembler dump.
 ```
 
 We can see that the `mov` instructions were used to move the hexadecimal value `0x86342` into the `EAX` register.<br/>
-With that, we can assume that the EAX register contains the hexadecimal value `0x86342`.
+With that, we can assume that the `eax` register contains the hexadecimal value `0x86342`.
 
 Then we just need to convert those hexadecimal to a decimal, and put it in the picoCTF{} flag format.
 Voila, we just solved the challenge.
