@@ -1,7 +1,7 @@
 # GDB Baby Step 1
 
 Contents:
-<a
+<a href="#Challenge
 
 # Challenge Information
 
@@ -35,3 +35,7 @@ With that, we can assume that the EAX register contains the hexadecimal value `0
 
 Then we just need to convert those hexadecimal to a decimal, and put it in the picoCTF{} flag format.
 Voila, we just solved the challenge.
+
+# References
+
+https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
