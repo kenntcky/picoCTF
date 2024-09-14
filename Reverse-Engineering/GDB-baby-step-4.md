@@ -88,7 +88,7 @@ Dump of assembler code for function func1:
    0x000000000040111b <+21>:    ret
 ```
 
-We see there the `imul` instruction or the multiply instruction were used.
+We can see there the `imul` instruction or the multiply instruction were used.
 
 ```
    0x0000000000401114 <+14>:    imul   $0x3269,%eax,%eax
