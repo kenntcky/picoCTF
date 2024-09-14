@@ -15,7 +15,7 @@ Challenge link: https://play.picoctf.org/practice/challenge/395
 Firstly, we are given a file called debugger0_a.<br/>
 From the title of the challenge, we should already know that we are gonna use GDB to solve this challenge.<br/>
 Before we do anything, we will make the file executable first, and then start `gdb`.
-```zsh
+```
 ┌──(kali㉿kali)-[~/learn-ctf/Reverse-Engineering/GDB-baby-step/1]
 └─$ chmod +x debugger0_a                            
                                                                                               
@@ -58,7 +58,7 @@ End of assembler dump.
 We can see that the `mov` instructions were used to move the hexadecimal value `0x86342` into the `EAX` register.<br/>
 With that, we can assume that the `eax` register contains the hexadecimal value `0x86342`.
 
-```zsh
+```
    0x0000000000001138 <+15>:    mov    $0x86342,%eax
 ```
 
