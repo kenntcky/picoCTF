@@ -46,7 +46,7 @@ From the challenge description, the `main` function calls a function that multip
 
 We need to find the constant that multiplied `eax` in order to solve the challenge. Let's disassemble `main` function first.
 
-```zsh
+```
 (gdb) disas main
 Dump of assembler code for function main:
    0x000000000040111c <+0>:     endbr64
